@@ -5,7 +5,7 @@ import { MobileNav} from "@material-tailwind/react";
 import { navLinks } from "../utils/constant";
 import Link from "next/link";
 
-export default function Example() {
+export default function Header() {
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
@@ -16,6 +16,7 @@ export default function Example() {
   }, []);
 
   const navList = (
+
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {navLinks.map((link) => (
         <Link href={link.link} key={link.title}>
@@ -26,8 +27,8 @@ export default function Example() {
   );
 
   return (
-    <nav className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
-      <div className="fixed top-0 container mx-auto flex items-center justify-between text-blue-gray-900">
+    <nav className="mx-auto max-w-screen-xl ">
+      <div className="py-2 px-4 lg:px-8 lg:py-4 container mx-auto flex items-center justify-between text-blue-gray-900">
         <img
           src="https://dexchange.trade/wp-content/uploads/2023/03/PNG.png"
           className="w-16 h-16"
@@ -91,7 +92,7 @@ export default function Example() {
       <MobileNav open={openNav}>
         <div className="container mx-auto">
           {navList}
-          <button className="flex items-center mb-2 bg-gradient-to-r from-rose-500 to-orange-600 text-white shadow-md p-4 rounded-xl">
+          <button className="flex items-center ripple-bg-red-500 mb-2 bg-gradient-to-r from-rose-500 to-orange-600 text-white shadow-md p-4 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
