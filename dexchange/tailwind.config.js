@@ -7,6 +7,10 @@ module.exports = {
   ],
 
   theme: {
+    fontFamily: {
+      'open-sans': ['Open Sans', 'sans-serif'],
+      'poppins': ['Poppins ', 'sans-serif'],
+    },
     ripple: theme => ({
         colors: theme('colors')
     }),
