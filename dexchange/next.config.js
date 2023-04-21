@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: ['dexchange.trade']
+  }
 }
 
 module.exports = nextConfig

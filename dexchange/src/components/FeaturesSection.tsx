@@ -1,4 +1,6 @@
-import { RiGlobalFill ,AiOutlineWifi,BsClock, BsFillPersonFill } from 'react-icons/all'
+import { BsClock, BsFillPersonFill } from 'react-icons/all'
+import { RiGlobalFill } from 'react-icons/ri'
+import { AiOutlineWifi } from 'react-icons/ai'
 
 const FeaturesSection = () => {
   return (
